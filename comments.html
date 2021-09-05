@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="SCSS/main.css" rel="stylesheet">
+        <title>Chalk Sweat and Tears</title>
+    </head>
+
+    <body onload="createlist()">
+
+        <div class="headerbar"> <!-- headerbar -->
+            <div class="headerleft"> <!-- headerbar_left for image-->
+                <p class="MainTitle">Chalk, Sweat & Tears!</p>
+                <p class="SubTitle">Rock Climbing</p>
+            </div>
+            <div class="headerright"> <!-- headerbar_right for main menu-->
+                <ul class="inline-list">
+                  <li class="inline-list-li"><a class="a1" href="index.html">Home</a></li>
+                  <li class="inline-list-li"><a class="a1" href="equipment.html">Equipment</a></li>
+                  <li class="inline-list-li"><a class="a1" href="locations.html">Locations</a></li>
+                  <li class="inline-list-li"><a class="a1" href="saved.html">Saved Items</a></li>
+                  <li class="inline-list-li"><a class="a1" href="contact.html">Contact Me</a></li>
+                  <li class="inline-list-li"><a class="a1" href="comments.html">Comments</a></li>
+
+            </ul>
+            </div> 
+        </div>
+    
+    <!-- make the input controls-->
+    <h1>Leave your comments</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Your Name</th>
+                <th>Your Comment</th>
+            </tr>
+            <tr>
+                <th style="width: 20%;"><input type="text" id="name" style="width: 100%;"></th>
+                <th style="width: 75%;"><input type="text" id="comment" style="width: 100%;"></th>
+                <th><img src='Images/save-xxl.png' alt='Save Icon' height="20" class="clickitem" onclick="inputitem()" id="savebutton"></th>
+                <th></th>
+            </tr>        
+        </thead>
+        <tbody id="tabledata">
+
+            
+        </tbody>
+    </table>
+        <script type="text/javascript" src="comments.js"></script>
+</body>
+
+</html>
+
+
+

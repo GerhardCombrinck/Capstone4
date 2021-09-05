@@ -1,0 +1,176 @@
+html {
+  font-family: 'Segoe UI';
+}
+
+.headerbar {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #007acc;
+}
+
+.MainTitle {
+  font-size: 55px;
+  margin: 0;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-left: 5mm;
+}
+
+.SubTitle {
+  font-size: 25px;
+  margin: 0;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+.headerleft {
+  width: 40%;
+  display: block;
+  text-align: center;
+  color: aliceblue;
+}
+
+.headerright {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.inline-list {
+  font-size: 20px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  list-style: none;
+  margin: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+  color: black;
+}
+
+.inline-list-li {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: inline;
+  font-weight: 600;
+  background-color: #c6e1f3;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-decoration: none;
+}
+
+.inline-list-li:hover {
+  background-color: #91cbf1;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 65em;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.button {
+  background-color: #1847e3;
+  width: 135px;
+  height: 45px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  border: black;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.quoteblock {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.165);
+}
+
+a:link.a1, a:visited.a1 {
+  text-decoration: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: black;
+}
+
+a.a2 {
+  text-decoration: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #0645ad;
+  cursor: pointer;
+}
+
+.drp_but {
+  background-color: #ffffff;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.drp {
+  position: relative;
+  display: inline-block;
+}
+
+.drp-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.drp-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.drp-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.drp:hover .drp-content {
+  display: block;
+}
+
+.drp:hover .dropbtn {
+  background-color: grey;
+}
+/*# sourceMappingURL=main.css.map */

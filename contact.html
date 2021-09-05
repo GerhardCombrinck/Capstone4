@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="SCSS/main.css" rel="stylesheet">
+        <title>Chalk Sweat and Tears</title>
+    </head>
+
+    <body>
+
+        <div class="headerbar"> <!-- headerbar -->
+            <div class="headerleft"> <!-- headerbar_left for image-->
+                <p class="MainTitle">Chalk, Sweat & Tears!</p>
+                <p class="SubTitle">Rock Climbing</p>
+            </div>
+            <div class="headerright"> <!-- headerbar_right for main menu-->
+                <ul class="inline-list">
+                    <li class="inline-list-li"><a class="a1" href="index.html">Home</a></li>
+                    <li class="inline-list-li"><a class="a1" href="equipment.html">Equipment</a></li>
+                    <li class="inline-list-li"><a class="a1" href="locations.html">Locations</a></li>
+                    <li class="inline-list-li"><a class="a1" href="saved.html">Saved Items</a></li>
+                    <li class="inline-list-li"><a class="a1" href="contact.html">Contact Me</a></li>
+                    <li class="inline-list-li"><a class="a1" href="comments.html">Comments</a></li>
+
+                </ul>
+            </div> 
+        </div>
+
+        <div class="content">
+            <h1>Contact Me</h1>
+
+            <div>
+                <div>
+                    <form>
+                        <div class="drp">
+                            <!--dropdown button for selectin reason for contacting-->
+                            <button class="drp_but">Reason for contacting</button>
+                            <div class="drp-content">
+                              <a id="l1" href="#">Question</a>
+                              <a id="l2" href="#">Suggestion</a>
+                              <a id="l3" href="#">Complaint</a>
+                            </div>
+                            <div>
+                                <input type="text" id="Reason" name="Reason" required>
+                            </div>
+                        </div>
+                        <!--User inputs name here-->
+                        <div>
+                            <label for="Name">Your name</label>
+                            <div>
+                                <input type="text" id="Name" name="Name" required>
+                            </div>
+                        </div>
+                        <!--User inputs email adress here-->
+                        <div>
+                            <label for="Email">Your email address</label>
+                            <div>
+                                <input type="email" id="Email" name="Email" required>
+                            </div>
+                        </div>
+                        <!--User inputs custom message here-->
+                        <div class="fcf-form-group">
+                            <label for="Message" >Your message</label>
+                            <div>
+                                <textarea id="Message" name="Message" rows="6" maxlength="3000" required></textarea>
+                            </div>
+                        </div>
+                        <!--Send button-->
+                        <div class="fcf-form-group">
+                            <button type="submit" id="fcf-button" >Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <script type="text/javascript" src="script.js"></script>
+
+    </body>
+</html>
+
+
+
+
+
+

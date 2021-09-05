@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="SCSS/main.css" rel="stylesheet">
+        <title>Chalk Sweat and Tears</title>
+    </head>
+
+    <body onload="checkliked()">
+
+        <div class="headerbar"> <!-- headerbar -->
+            <div class="headerleft"> <!-- headerbar_left for image-->
+                <p class="MainTitle">Chalk, Sweat & Tears!</p>
+                <p class="SubTitle">Rock Climbing</p>
+            </div>
+            <div class="headerright"> <!-- headerbar_right for main menu-->
+                <ul class="inline-list">
+                  <li class="inline-list-li"><a class="a1" href="index.html">Home</a></li>
+                  <li class="inline-list-li"><a class="a1" href="equipment.html">Equipment</a></li>
+                  <li class="inline-list-li"><a class="a1" href="locations.html">Locations</a></li>
+                  <li class="inline-list-li"><a class="a1" href="saved.html">Saved Items</a></li>
+                  <li class="inline-list-li"><a class="a1" href="contact.html">Contact Me</a></li>
+                  <li class="inline-list-li"><a class="a1" href="comments.html">Comments</a></li>
+
+            </ul>
+            </div> 
+        </div>
+
+        <div class="content">
+            <h2>Climbing Equipment</h2>
+
+            <p>You can buy equipment at: <a href="https://www.mountainmailorder.co.za/">Mountain Mail Order</a> </p>
+
+            <table id="eqipment_table">
+              <tr>
+                <th>Equipment</th>
+                <th>Image</th>
+                <th>Save For Later</th>
+                <th>Like</th>
+              </tr>
+              
+              <tr id="t1">
+                <td>Climbing Shoes</td>
+                <td><img src="https://cdn.bike24.net/i/mb/82/36/61/274359-00-d-549621.jpg" alt="rope"style="height: 150px;"></td>
+                <td><a class="a2" onclick="saveforlater('t1')">Save for later</a></td>
+                <td><a class="a2" onclick="like('t1')">Like</a></td>
+              </tr>
+              <tr id="t2">
+                <td>Harnass</td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Kong_-_roger.jpg/220px-Kong_-_roger.jpg" alt="rope"style="height: 150px;"> </td>
+                <td><a class="a2" onclick="saveforlater('t2')">Save for later</a></td>
+                <td><a class="a2" onclick="like('t2')">Like</a></td>
+              </tr>
+              <tr id="t3">
+                <td>Rope</td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Climbing_Rope.jpg/220px-Climbing_Rope.jpg" alt="rope"style="height: 150px;"> </td>
+                <td><a class="a2" onclick="saveforlater('t3')">Save for later</a></td>
+                <td><a class="a2" onclick="like('t3')">Like</a></td>
+              </tr>
+              <tr id="t4">
+                <td>Helmet</td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Petzl_speleology_helmet.jpeg/220px-Petzl_speleology_helmet.jpeg" alt="rope"style="height: 150px;"> </td>
+                <td><a class="a2" onclick="saveforlater('t4')">Save for later</a></td>
+                <td><a class="a2" onclick="like('t4')">Like</a></td>
+              </tr>
+              <tr id="t5">
+                <td>Belay Device</td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Petzl_Belay_Devices.jpg/220px-Petzl_Belay_Devices.jpg" alt="rope"style="height: 150px;"> </td>
+                <td><a class="a2" onclick="saveforlater('t5')">Save for later</a></td>
+                <td><a class="a2" onclick="like('t5')">Like</a></td>
+              </tr>
+              <tr id="t6">
+                <td>Carabiner</td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Petzl_Carabiners.jpg/260px-Petzl_Carabiners.jpg" alt="rope"style="height: 150px;"> </td>
+                <td><a class="a2" onclick="saveforlater('t6')">Save for later</a></td>
+                <td><a class="a2" onclick="like('t6')">Like</a></td>
+              </tr>
+              <tr id="t7">
+                <td>Quick Draw</td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Petzl_Quickdraws.jpg/220px-Petzl_Quickdraws.jpg" alt="rope"style="height: 150px;"> </td>
+                <td><a class="a2" onclick="saveforlater('t7')">Save for later</a></td>
+                <td><a class="a2" onclick="like('t7')">Like</a></td>
+              </tr>
+              <tr id="t8">
+                <td>Sling</td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Petzl_Slings.jpg/220px-Petzl_Slings.jpg" alt="rope"style="height: 150px;"> </td>
+                <td><a class="a2" onclick="saveforlater('t8')">Save for later</a></td>
+                <td><a class="a2" onclick="like('t8')">Like</a></td>
+              </tr>
+              <tr id="t9">
+                <td>Chalk Bag</td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Petzl_Chalkbag.jpg/220px-Petzl_Chalkbag.jpg" alt="rope"style="height: 150px;"> </td>
+                <td><a class="a2" onclick="saveforlater('t9')">Save for later</a></td>
+                <td><a class="a2" onclick="like('t9')">Like</a></td>
+              </tr>
+              <tr id="t10">
+                <td>Climbing Chalk</td>
+                <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2ggtTBaOOzA5qLuYy_KJFp4QlZeNOEgg8jQ&usqp=CAU" alt="rope"style="height: 150px;"> </td>
+                <td><a class="a2" onclick="saveforlater('t10')">Save for later</a></td>
+                <td><a class="a2" onclick="like('t10')">Like</a></td>
+              </tr>
+              <tr id="t11">
+                <td>Finger Tape</td>
+                <td><img src="https://i2.wp.com/everythingaboutclimbing.com/wp-content/uploads/2018/10/img_1918.png?w=1080&ssl=1" alt="rope"style="height: 150px;"> </td>
+                <td><a class="a2" onclick="saveforlater('t11')">Save for later</a></td>
+                <td><a class="a2" onclick="like('t11')">Like</a></td>
+              </tr>
+              <tr id="t12">
+                <td>Cams</td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Camalot_number_6.JPG/220px-Camalot_number_6.JPG" alt="rope"style="height: 150px;"> </td>
+                <td><a class="a2" onclick="saveforlater('t12')">Save for later</a></td>
+                <td><a class="a2" onclick="like('t12')">Like</a></td>
+              </tr>
+              <tr id="t13">
+                <td>Nuts & Hexes</td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Climbing_Stoppers.jpg/220px-Climbing_Stoppers.jpg" alt="rope"style="height: 150px;"> </td>
+                <td><a class="a2" onclick="saveforlater('t13')">Save for later</a></td>
+                <td><a class="a2" onclick="like('t13')">Like</a></td>
+              </tr>
+            </table>
+        </div>
+
+
+        <script type="text/javascript" src="script.js"></script>
+
+
+    </body>
+
+
+
+</html>
+
+
+
+
+
+
