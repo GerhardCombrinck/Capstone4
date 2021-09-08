@@ -5,6 +5,7 @@ function item(name, image) {
 }
 
 
+ 
 //function to save the specified item sfor later by adding them to an array which is stored in sessionstorage
 function saveforlater(row){
     if (JSON.parse(sessionStorage.getItem("saved") == null)) {
